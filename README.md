@@ -1,100 +1,71 @@
-tclip
-=====
+ï»¿***æ¦‚è¦***
+ç”¨äºå›¾ç‰‡è£å‰ªã€‚æœ‰ä»¥ä¸‹ç‰¹ç‚¹ï¼š 
+1.èƒ½è¿›è¡Œäººè„¸è¯†åˆ«ã€‚å›¾ç‰‡ä¸­æœ‰äººè„¸ï¼Œå°†è‡ªåŠ¨è§†ä¸ºäººè„¸åŒºåŸŸä¸ºé‡è¦åŒºåŸŸï¼Œå°†ä¸ä¼šè¢«è£å‰ªæ‰ã€‚ 
+2.è‡ªåŠ¨è¯†åˆ«å…¶å®ƒé‡è¦åŒºåŸŸã€‚å¦‚æœå›¾ç‰‡ä¸­æœªè¯†åˆ«å‡ºäººè„¸ï¼Œåˆ™ä¼šæ ¹æ®ç‰¹å¾åˆ†å¸ƒè®¡ç®—å‡ºé‡åŒºåŸŸã€‚ 
+æ€»è€Œè¨€ä¹‹ï¼Œè‡ªåŠ¨è¯†åˆ«å›¾ç‰‡ä¸­çš„é‡è¦åŒºåŸŸï¼Œå¹¶ä¸”åœ¨å›¾ç‰‡è£å‰ªæ—¶ä¿ç•™é‡è¦åŒºåŸŸã€‚ 
+ç›®å‰ï¼Œå·²ç»æ­£å¼åœ¨æ·˜å®ä¸€æ·˜ç©å®¢ä¸­ä½¿ç”¨ã€‚wanke.etao.com
 
-Ãû×ÖËµÃ÷
----------------
-T¿ªÍ·£¬´ú±íÊÇÌÔ±¦¿ªÔ´<br/>
-clip£¬¶Á[klip]£¬ÒëÎª²Ã¼ô¡£<br/>
-Tclip£¬ÒâÎªÌÔ±¦¿ªÔ´µÄÍ¼Æ¬²Ã¼ôÏîÄ¿¡£<br/>
-<br/>
+æ•ˆæœæ¼”ç¤ºï¼š
+http://demo.bo56.com/tclip
 
-¸ÅÒª
----------------
-ÓÃÓÚÍ¼Æ¬²Ã¼ô¡£ÓĞÒÔÏÂÌØµã£º <br/>
-1.ÄÜ½øĞĞÈËÁ³Ê¶±ğ¡£Í¼Æ¬ÖĞÓĞÈËÁ³£¬½«×Ô¶¯ÊÓÎªÈËÁ³ÇøÓòÎªÖØÒªÇøÓò£¬½«²»»á±»²Ã¼ôµô¡£ <br/>
-2.×Ô¶¯Ê¶±ğÆäËüÖØÒªÇøÓò¡£Èç¹ûÍ¼Æ¬ÖĞÎ´Ê¶±ğ³öÈËÁ³£¬Ôò»á¸ù¾İÌØÕ÷·Ö²¼¼ÆËã³öÖØÇøÓò¡£ <br/>
-×Ü¶øÑÔÖ®£¬×Ô¶¯Ê¶±ğÍ¼Æ¬ÖĞµÄÖØÒªÇøÓò£¬²¢ÇÒÔÚÍ¼Æ¬²Ã¼ôÊ±±£ÁôÖØÒªÇøÓò¡£ <br/>
-Ä¿Ç°£¬ÒÑ¾­ÕıÊ½ÔÚÌÔ±¦Ò»ÌÔÍæ¿ÍÖĞÊ¹ÓÃ¡£[wanke.etao.com](http://wanke.etao.com) <br/>
-<br/>
 
-Ğ§¹ûÑİÊ¾
------------------------
-###ÈËÎïĞ§¹ûÑİÊ¾
-Ô­Í¼<br/>
-![github](https://raw.github.com/exinnet/tclip/master/demo_images/a1.jpg "github")
-<br/><br/>
-Èç¹û°´ÕÕ´ÓÖĞ¼ä½ØÈ¡Îª 400 * 225 ´óĞ¡´óÍ¼Æ¬¡£Ğ§¹ûÈçÏÂ£º<br/>
-![github](https://raw.github.com/exinnet/tclip/master/demo_images/a2.JPG "github")
-<br/><br/>
-Ê¹ÓÃtclip²Ã¼ôÍ¼Æ¬Ğ§¹ûÈçÏÂ£º<br/>
-![github](https://raw.github.com/exinnet/tclip/master/demo_images/a3.jpg "github")
-<br/>
-###¾°ÎïĞ§¹ûÑİÊ¾
-Ô­Í¼<br/>
-![github](https://raw.github.com/exinnet/tclip/master/demo_images/b1.jpg "github")
-<br/><br/>
-Èç¹û°´ÕÕ´ÓÖĞ¼ä½ØÈ¡¡£Ğ§¹ûÈçÏÂ£º<br/>
-![github](https://raw.github.com/exinnet/tclip/master/demo_images/b2.JPG "github")
-<br/><br/>
-Ê¹ÓÃtclip²Ã¼ôÍ¼Æ¬Ğ§¹ûÈçÏÂ£º<br/>
-![github](https://raw.github.com/exinnet/tclip/master/demo_images/b3.jpg "github")
-<br/>
-<br/>
-###ÔÚÏßÑİÊ¾
-ÑİÊ¾µØÖ·£º[http://demo.bo56.com/tclip](http://demo.bo56.com/tclip)
-<br/>
-<br/>
-°²×°²½Öè£º
---------------
-###Ô´ÂëÏÂÔØ<br/>
-opencv2 ÏÂÔØµØÖ·  [http://www.bo56.com/tclipÈËÁ³Ê¶±ğÍ¼Æ¬²Ã¼ô/#download](http://www.bo56.com/tclip%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB%E5%9B%BE%E7%89%87%E8%A3%81%E5%89%AA/#download) (½¨Òéopencv2.4.4°æ±¾) 
-<br/>
-###°²×°opencv2 <br/>
-´ËÀ©Õ¹ÒÀÀµÓÚopencv2.0 Ö®ÉÏ°æ±¾¡£Òò´Ë°²×°Ç°ÏÈ°²×°opencv¡£opencvµÄ°²×°²½ÖèÈçÏÂ<br/>
-yum install gtk+ gtk+-devel pkgconfig libpng zlib libjpeg libtiff cmake <br/>
-ÏÂÔØ opencv2 °²×°°ü <br/>
-½âÑ¹°²×°°ü <br/>
-cd ½øÈë°²×°°üÎÄ¼ş¼ĞÄÚ¡£<br/>
-cmake CMakeLists.txt <br/>
-make && make install <br/>
-vim /etc/profile <br/>
-ÔÚ unset i Ç°Ôö¼Ó <br/>
-export PKG_CONFIG_PATH=/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH <br/>
-±£³ÖÍË³öºó£¬Ö´ĞĞÈçÏÂÃüÁî <br/>
-source /etc/profile <br/>
-echo "/usr/local/lib/" > /etc/ld.so.conf.d/opencv.conf <br/>
-ldconfig <br/>
-<br/>
-###°²×°tclipÀ©Õ¹<br/>
-cd µ½Ô´´úÂëÄ¿Â¼ÖĞµÄphp_extÎÄ¼ş¼Ğ <br/>
-phpize <br/>
-./configure <br/>
-make <br/>
-cp modules/tclip.so µ½ extension Ä¿Â¼ <br/>
-ĞŞ¸Äphp.ini¡£¼ÓÈë extension=tclip.so <br/>
-ÖØÆôfpm <br/>
-###°²×°ÃüÁîĞĞ<br/>
-Èç¹ûÏëÊ¹ÓÃÃüÁîĞĞ·½Ê½£¬¿ÉÒÔ½øĞĞÈçÏÂ°²×°<br/>
-cd ½øÈë°²×°°üsoftÎÄ¼ş¼ĞÄÚ<br/>
-chmod +x ./tclip.sh <br/>
-./tclip.sh <br/>
-<br/>
+***å®‰è£…æ­¥éª¤***
 
-Ê¹ÓÃ·½·¨ËµÃ÷
----------------------
-µÚÒ»ÖÖ£ºÔÚphpÖĞÊ¹ÓÃ¸ñÊ½£º<br/>
-tclip(ÎÄ¼şÔ­Â·¾¶£¬²Ã¼ôºóµÄÍ¼Æ¬±£´æÂ·¾¶£¬²Ã¼ôºóµÄÍ¼Æ¬¿í¶È£¬²Ã¼ôºóµÄÍ¼Æ¬¸ß¶È)  <br/>
-Ê¾Àı£º <br/>
-$source_file = "/tmp/a.jpg";  <br/>
-$dest_file = "/www/a_dest.jpg";  <br/>
-$width = 400;  <br/>
-$height = 200;  <br/>
-$ret = tclip($source_file, $dest_file, $width, $height);  <br/>
-²Ã¼ô³É¹¦ $ret Îª true£¬²Ã¼ôÊ¶±ğ $ret Îªfalse <br/>
-µÚ¶şÖÖ£ºÃüÁîĞĞ <br/>
-²ÎÊıËµÃ÷£º <br/>
--s Ô­Í¼Â·¾¶ <br/>
--d ²Ã¼ôºóµÄÍ¼Æ¬±£´æÂ·¾¶ <br/>
--w ²Ã¼ôºóµÄÍ¼Æ¬¿í¶È <br/>
--h ²Ã¼ôºóµÄÍ¼Æ¬¸ß¶È <br/>
-./tclip -s a.jpg -d a_dest.jpg -w 400 -h 200 <br/>
+æºç ä¸‹è½½:
+opencv2 ä¸‹è½½åœ°å€  http://www.opencv.org.cn/index.php/Download
+
+å®‰è£…opencv2:
+æ­¤æ‰©å±•ä¾èµ–äºopencv2.0 ä¹‹ä¸Šç‰ˆæœ¬ã€‚å› æ­¤å®‰è£…å‰å…ˆå®‰è£…opencvã€‚opencvçš„å®‰è£…æ­¥éª¤å¦‚ä¸‹
+1.yum install gtk+ gtk+-devel pkgconfig libpng zlib libjpeg libtiff cmake
+2.ä¸‹è½½ opencv2 å®‰è£…åŒ…
+3.è§£å‹å®‰è£…åŒ…
+4.cd è¿›å…¥å®‰è£…åŒ…æ–‡ä»¶å¤¹å†…ã€‚
+5.cmake CMakeLists.txt
+6.make && make install
+7.vim /etc/profile
+åœ¨ unset i å‰å¢åŠ 
+export PKG_CONFIG_PATH=/usr/lib/pkgconfig/:/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
+ä¿æŒé€€å‡ºåï¼Œæ‰§è¡Œå¦‚ä¸‹å‘½ä»¤
+8. source /etc/profile
+9. echo "/usr/local/lib/" > /etc/ld.so.conf.d/opencv.conf
+10. ldconfig
+
+å®‰è£…tclipæ‰©å±•:
+1. cd åˆ°æºä»£ç ç›®å½•ä¸­çš„php_extæ–‡ä»¶å¤¹
+2. phpize
+3. ./configure
+4. make
+5. cp modules/tclip.so åˆ° extension ç›®å½•
+6. ä¿®æ”¹php.iniã€‚åŠ å…¥ extension=tclip.so
+7. é‡å¯fpm
+
+å®‰è£…å‘½ä»¤è¡Œ:
+å¦‚æœæƒ³ä½¿ç”¨å‘½ä»¤è¡Œæ–¹å¼ï¼Œå¯ä»¥è¿›è¡Œå¦‚ä¸‹å®‰è£…
+1. cd è¿›å…¥å®‰è£…åŒ…softæ–‡ä»¶å¤¹å†…
+2. chmod +x ./tclip.sh
+3. ./tclip.sh
+
+
+***ä½¿ç”¨æ–¹æ³•è¯´æ˜***
+ç¬¬ä¸€ç§ï¼šåœ¨phpä¸­ä½¿ç”¨æ ¼å¼ï¼š
+tclip(æ–‡ä»¶åŸè·¯å¾„ï¼Œè£å‰ªåçš„å›¾ç‰‡ä¿å­˜è·¯å¾„ï¼Œè£å‰ªåçš„å›¾ç‰‡å®½åº¦ï¼Œè£å‰ªåçš„å›¾ç‰‡é«˜åº¦) 
+ç¤ºä¾‹ï¼š
+$source_file = "/tmp/a.jpg"; 
+$dest_file = "/www/a_dest.jpg"; 
+$width = 400; 
+$height = 200; 
+tclip($source_file, $dest_file, $width, $height); 
+ç¬¬äºŒç§ï¼šåœ¨phpä¸­ç›´æ¥ä¼ é€’å›¾ç‰‡äºŒè¿›åˆ¶æ•°æ®
+ç¤ºä¾‹ï¼š
+$source_binary = file_get_contents("/tmp/a.jpg"); 
+$dest_file = "/www/a_dest.jpg"; 
+$width = 400; 
+$height = 200; 
+tclip($source_binary, $dest_file, $width, $height, true); 
+ç¬¬ä¸‰ç§ï¼šå‘½ä»¤è¡Œ 
+å‚æ•°è¯´æ˜ï¼š 
+-s åŸå›¾è·¯å¾„ 
+-d è£å‰ªåçš„å›¾ç‰‡ä¿å­˜è·¯å¾„ 
+-w è£å‰ªåçš„å›¾ç‰‡å®½åº¦ 
+-h è£å‰ªåçš„å›¾ç‰‡é«˜åº¦ 
+./tclip -s a.jpg -d a_dest.jpg -w 400 -h 200 
