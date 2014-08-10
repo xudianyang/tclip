@@ -73,6 +73,8 @@ ZEND_END_MODULE_GLOBALS(tclip)
 #define TCLIP_G(v) (tclip_globals.v)
 #endif
 
+#define TCLIP_VERSION                     "1.0.2"
+
 #endif	/* PHP_TCLIP_H */
 
 

@@ -55,7 +55,14 @@ $dest_file = "/www/a_dest.jpg";
 $width = 400; 
 $height = 200; 
 tclip($source_file, $dest_file, $width, $height); 
-第二种：命令行 
+第二种：在php中直接传递图片二进制数据
+示例：
+$source_binary = file_get_contents("/tmp/a.jpg"); 
+$dest_file = "/www/a_dest.jpg"; 
+$width = 400; 
+$height = 200; 
+tclip($source_binary, $dest_file, $width, $height, true); 
+第三种：命令行 
 参数说明： 
 -s 原图路径 
 -d 裁剪后的图片保存路径 

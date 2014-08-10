@@ -64,38 +64,13 @@ zend_function_entry tclip_functions[] = {
 };
 /* }}} */
 
-/* {{{ tclip_module_entry
- */
-zend_module_entry tclip_module_entry = {
-#if ZEND_MODULE_API_NO >= 20010901
-	STANDARD_MODULE_HEADER,
-#endif
-	"tclip",
-	tclip_functions,
-	PHP_MINIT(tclip),
-	PHP_MSHUTDOWN(tclip),
-	PHP_RINIT(tclip),		/* Replace with NULL if there's nothing to do at request start */
-	PHP_RSHUTDOWN(tclip),	/* Replace with NULL if there's nothing to do at request end */
-	PHP_MINFO(tclip),
-#if ZEND_MODULE_API_NO >= 20010901
-	"0.1", /* Replace with version number for your extension */
-#endif
-	STANDARD_MODULE_PROPERTIES
-};
-/* }}} */
-
-#ifdef COMPILE_DL_TCLIP
-BEGIN_EXTERN_C()
-ZEND_GET_MODULE(tclip)
-END_EXTERN_C()
-#endif
-
 /* {{{ PHP_INI
  */
 /* Remove comments and fill if you need to have entries in php.ini*/
+
 PHP_INI_BEGIN()
-    //STD_PHP_INI_ENTRY("tclip.global_value",      "42", PHP_INI_ALL, OnUpdateLong, global_value, zend_tclip_globals, tclip_globals)
-    STD_PHP_INI_ENTRY("tclip.face_config_path", "", PHP_INI_ALL, OnUpdateString, face_config_path, zend_tclip_globals, tclip_globals)
+	//STD_PHP_INI_ENTRY("tclip.global_value",      "42", PHP_INI_ALL, OnUpdateLong, global_value, zend_tclip_globals, tclip_globals)
+	STD_PHP_INI_ENTRY("tclip.face_config_path", "", PHP_INI_ALL, OnUpdateString, face_config_path, zend_tclip_globals, tclip_globals)
 PHP_INI_END()
 
 /* }}} */
@@ -103,7 +78,7 @@ PHP_INI_END()
 /* {{{ php_tclip_init_globals
  */
 /* Uncomment this function if you have INI entries*/
-static void php_tclip_init_globals(zend_tclip_globals *tclip_globals)
+PHP_GINIT_FUNCTION(tclip)
 {
 	tclip_globals->face_cascade = &face_cascade;
 	tclip_globals->face_config_path = NULL;
@@ -119,7 +94,7 @@ PHP_MINIT_FUNCTION(tclip)
 	REGISTER_INI_ENTRIES();
 	
 	string face_config_path = (TCLIP_G(face_config_path) == "" || TCLIP_G(face_config_path) == NULL)? "/usr/local/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml" :TCLIP_G(face_config_path);
-	if( !face_cascade.load( face_config_path ) ){ 
+	if( !face_cascade.load( face_config_path ) ){
 		php_error_docref(NULL TSRMLS_CC, E_WARNING, "can not load classifier file！%s", face_config_path.c_str());
         return FAILURE; 
     }
@@ -163,6 +138,7 @@ PHP_MINFO_FUNCTION(tclip)
 {
 	php_info_print_table_start();
 	php_info_print_table_header(2, "tclip support", "enabled");
+	php_info_print_table_row(2, "Version", TCLIP_VERSION);
 	php_info_print_table_end();
 
 	/* Remove comments if you have entries in php.ini	*/
@@ -299,6 +275,7 @@ PHP_FUNCTION(tclip)
 {
 	char *source_path = NULL;
 	char *dest_path = NULL;
+	zend_bool binary = 0;
 	int source_len, dest_len;
 	int dest_height, dest_width;
 	int result = 0;
@@ -313,11 +290,16 @@ PHP_FUNCTION(tclip)
 	int clip_left = 0;
 	int clip_right = 0;
 
-	if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ssll", &source_path, &source_len, &dest_path, &dest_len, &dest_width, &dest_height) == FAILURE) {
+	if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ssll|b", &source_path, &source_len, &dest_path, &dest_len, &dest_width, &dest_height, &binary) == FAILURE) {
 		return;
 	}
 
-	image = imread( source_path );
+	if (binary) {
+		image = imdecode(std::vector<uchar>(source_path, source_path + source_len), 1);
+	} else {
+		image = imread( source_path );
+	}
+
     if( !image.data ){
         php_error_docref(NULL TSRMLS_CC, E_WARNING, "fail to load image from %s", source_path);
         RETURN_FALSE;
@@ -397,7 +379,7 @@ PHP_FUNCTION(tclip)
 	}
 	catch (exception &e)
 	{
-		php_error_docref(NULL TSRMLS_CC, E_WARNING, e.what());
+		php_error_docref(NULL TSRMLS_CC, E_WARNING, "%s" , e.what());
 		RETURN_FALSE;
 	}
 	
@@ -410,7 +392,36 @@ PHP_FUNCTION(tclip)
    follow this convention for the convenience of others editing your code.
 */
 
+/* {{{ tclip_module_entry
+ */
+zend_module_entry tclip_module_entry = {
+#if ZEND_MODULE_API_NO >= 20050922
+    STANDARD_MODULE_HEADER_EX, NULL,
+    NULL,
+#else
+    STANDARD_MODULE_HEADER,
+#endif
+    "tclip",
+    tclip_functions,
+    PHP_MINIT(tclip),
+    PHP_MSHUTDOWN(tclip),
+    PHP_RINIT(tclip),
+    PHP_RSHUTDOWN(tclip),
+    PHP_MINFO(tclip),
+    TCLIP_VERSION,
+    PHP_MODULE_GLOBALS(tclip),
+    PHP_GINIT(tclip),
+    NULL,
+    NULL,
+    STANDARD_MODULE_PROPERTIES_EX
+};
+/* }}} */
 
+#ifdef COMPILE_DL_TCLIP
+BEGIN_EXTERN_C()
+ZEND_GET_MODULE(tclip)
+END_EXTERN_C()
+#endif
 /*
  * Local variables:
  * tab-width: 4
