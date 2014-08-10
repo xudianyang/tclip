@@ -92,7 +92,7 @@ $height = 200;  <br/>
 $ret = tclip($source_file, $dest_file, $width, $height);  <br/>
 裁剪成功 $ret 为 true，裁剪识别 $ret 为false <br/>
 第二种：在php中直接传递图片二进制数据：<br/>
-tclip(图片二进制数据，裁剪后的图片保存路径，裁剪后的图片宽度，裁剪后的图片高度)  <br/>
+tclip(图片二进制数据，裁剪后的图片保存路径，裁剪后的图片宽度，裁剪后的图片高度，是否为二进制数据)  <br/>
 示例： <br/>
 $source_binary = file_get_contents("/tmp/a.jpg");  <br/>
 $dest_file = "/www/a_dest.jpg";  <br/>
